@@ -3,6 +3,12 @@ import Search from './components/Search'
 import styles from './App.modules.css'
 import { Container } from '@material-ui/core';
 import Locations from './components/Locations'
+import { makeStyles } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+
+import CardContent from '@material-ui/core/CardContent';
+
+import Typography from '@material-ui/core/Typography';
 
 
 
@@ -30,7 +36,7 @@ const App =() => {
     const search = searchValue =>{
         setLoading(true);
         //setErrorMessage(null);
-
+        searchValue=searchValue.trim().replace(/ /g, '-').toLowerCase();
         fetch(`https://covid-19-testing.github.io/locations/${searchValue}/complete.json`)
         .then(response => response.json())
        // .then(result => console.log(result))
@@ -56,23 +62,44 @@ const App =() => {
     }
 
    
-
+    
 
     return(
         
         <div className='hero-image'>
             <Search className={styles.heroContent} search={search}/>
                 
-           <div>
+           {/* <div>
                {locations.map(location =>
                
-               <Locations location={location.name}/>
+               <Locations location={location.name} location={location.id} />
+              
                
                  )}
-           </div>
-           <p>{locations.map((location)=>
-                location.name)}</p>
+           </div> */}
+           {locations.map((location, index)=>(
+               
+          <Card className={styles.root}> 
+          <CardContent>
+           
+             <Typography  color="textSecondary" gutterBottom>
+            {location.name}
+           </Typography>
+           <Typography variant="body2" component="p">
+           {location.description}
+           <br />
+           {'"a benevolent smile"'}
+         </Typography>
+                
+                
+               
+                </CardContent>
+        </Card>
+       
+         ))}
+            
         </div>
+     
     
     )
     

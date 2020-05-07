@@ -21,4 +21,17 @@ position: relative;
     flex-direction: column;
     background-image: url()
 } */
-
+.root{
+    Width: 275px;
+  }
+  .bullet {
+    display: 'inline-block';
+    margin: '0 2px';
+    transform: 'scale(0.8)';
+  }
+  title {
+      font-size: 14;
+  }
+  pos{
+    margin-bottom: 12;
+  }

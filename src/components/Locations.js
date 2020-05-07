@@ -1,14 +1,15 @@
 import React from 'react';
 
 
-const Locations =({location}) =>{
-    console.log('hi')
+const Locations =({location, id}) =>{
+    console.log(id)
   
    return (
        <div className="locations">
            
-           <h1>{location.name}</h1>
+           {/* <h3>{location.name}</h3> */}
             <h2>{location}</h2>
+            <h2>{id}</h2>
 
        </div>
    )
