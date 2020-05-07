@@ -6,6 +6,7 @@ import styles from "../components/Search.modules.css";
 
 const Search = (props) => {
   const [searchValue, setSearchValue] = useState("");
+  console.log(props)
 
   const handleSearchInputChanges = (e) => {
     setSearchValue(e.target.value);
@@ -62,6 +63,7 @@ const Search = (props) => {
         </div>
       
       </form>
+    
     </div>
   );
 };
