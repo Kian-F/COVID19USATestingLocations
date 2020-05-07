@@ -1,0 +1,31 @@
+.heroContent{
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  .mainHeder{
+    text-align: center;
+    /* top: 30%; */
+    /* left: 2%; */
+    color: #caaefb;
+    position: absolute;
+    /* size: 72px; */
+    width: 100%;
+    font-size: 40px;
+  }
+  .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(219, 203, 203, 0.23);
+}
+.searchButton{
+    position: fixed;
+    text-align: center;
+    top: -1px;
+    left: 205px;
+}
+.MuiButton-contained {
+    height: 56px;
+    width: 135px;
+}
