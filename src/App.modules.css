@@ -39,4 +39,32 @@ position: relative;
 .box{
     flex-flow: row;
     /* width: 20px; */
+    position: absolute;
+    top: 30rem;
+    margin: 20px;
+    padding-bottom: 20px;
+}
+.MuiCard-root{
+    margin-bottom: 20px ;
+}
+.lastUpdated {
+    font-style: italic;
+    color: #666;
+    font-size: .875rem;
+}
+.paper{
+    padding: spacing(2);
+    text-align: center; 
+    display: flexbox;
+    margin-left: 20px;
+  }
+  .MuiGrid-grid-xs-true{
+      display: flex;
+  }
+
+  .MuiPaper-elevation1 {
+    box-shadow:none;
+    border: none;
+    margin-top: 20px;
+    margin-right: 17px;
 }

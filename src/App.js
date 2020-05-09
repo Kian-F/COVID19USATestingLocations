@@ -6,9 +6,8 @@ import Locations from "./components/Locations";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import Grid from '@material-ui/core/Grid';
-
+import Paper from '@material-ui/core/Paper';
 import CardContent from "@material-ui/core/CardContent";
-
 import Typography from "@material-ui/core/Typography";
 
 const url = "https://covid-19-testing.github.io/locations/:state/complete.json";
@@ -27,6 +26,20 @@ const App = () => {
   //     })
 
   // }, [])
+
+const d = new Date();
+var weekday = new Array(7);
+
+weekday[1] = "Monday";
+weekday[2] = "Tuesday";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday";
+weekday[7] = "Sunday";
+var day = weekday[d.getDay()]
+console.log(day)
+
 
   const search = (searchValue) => {
     setLoading(true);
@@ -57,7 +70,7 @@ const App = () => {
       <div className="hero-image">
         <Search className={styles.heroContent} search={search} />
       </div>
-      <Grid item xs={4}>
+      <Grid item xs={2}>
       <div className='box'>
         {locations.map((location, index) => (
           <Card className={styles.root}>
@@ -65,11 +78,47 @@ const App = () => {
               <Typography color="textSecondary" gutterBottom>
                 {location.name}
               </Typography>
+        <p className='lastUpdated'>Last Updated: {location.updated}</p>
               <Typography variant="body2" component="p">
                 {location.description}
                 <br />
-                {'"a benevolent smile"'}
+               
               </Typography>
+              <Grid container spacing={3}>
+        <Grid item xs>
+        {location.regular_schedule.map(day =>
+           
+        <Paper className={styles.paper}>{weekday[day.weekday]}
+    
+        <br/>
+        <br/>
+        Oppen: {day.opens_at}
+        <br/>
+        <br/>
+        Close:{day.closes_at}
+        </Paper>  
+        )}
+    
+     
+        </Grid>
+        {location.physical_address.map(address =>
+            <p>{address.address_1}
+            <br/>
+            {address.city},{' '}
+            
+            {address.state_province}{' '}
+            {address.postal_code}
+            </p>
+            
+            )}
+        </Grid>
+        <Typography>
+        {location.phones.map(phone => 
+        <p>{phone.number}</p>
+      
+      )}
+        </Typography>
+    
             </CardContent>
           </Card>
         ))}
