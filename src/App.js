@@ -114,7 +114,12 @@ console.log(day)
         </Grid>
         <Typography>
         {location.phones.map(phone => 
-        <p>{phone.number}</p>
+        <p>Phone Number: {phone.number}
+        <br/>
+        Type: {phone.type}
+        <br/>
+        Language: {phone.language}
+        </p>
       
       )}
         </Typography>

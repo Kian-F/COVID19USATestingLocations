@@ -29,3 +29,9 @@
     height: 56px;
     width: 135px;
 }
+/* @media only screen and (max-width: 220px) {
+    .heroContent, .mainHeder  {
+      margin: 2% 0 !important;
+    }
+  
+} */
