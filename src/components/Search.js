@@ -31,9 +31,11 @@ const Search = (props) => {
     <div>
       <div className="mainHeder">
         <h1>COVID-19 USA Testing Locations</h1>
+        <p style={{color:'white'}}>Find By State</p>
       </div>
 
       <form className="heroContent">
+          
         {/* <input
           value={searchValue}
           onChange={handleSearchInputChanges}
