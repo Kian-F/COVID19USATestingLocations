@@ -13,14 +13,11 @@ position: relative;
 
 }
 
-
-/* .container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-image: url()
-} */
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 .root{
     Width: 275px;
     flex-grow: 1;
@@ -38,7 +35,6 @@ position: relative;
   }
 .box{
     flex-flow: row;
-    /* width: 20px; */
     position: absolute;
     top: 30rem;
     margin: 20px;
@@ -68,34 +64,8 @@ position: relative;
     margin-top: 20px;
     margin-right: 17px;
 }
-
-/* @media only screen and (max-width: 770px) {
-    .root {
-      margin: 2% 0 !important;
-    }
-  
-} */
-
-/* code that is here, until the first @media block, will apply to any screen size */
-#somethingorother {
-    width: 800px ;
+@media only screen and (max-width: 770px) {
+  .container {
+    margin: 0 10%;
   }
-  
-  @media screen and (max-width: 320px) {
-    /* comes into effect for screens less than or equal to 320 pixels */
-    #somethingorother {
-      width: 120px ;
-    }
-  }
-  @media screen and (min-width: 321px) and (max-width: 480px) {
-    /* comes into effect for screens between 321 and 480 pixels (inclusive) */
-    #somethingorother {
-      width: 320px ;
-    }
-  }
-  @media screen and (min-width: 481px) {
-    /* comes into effect for screens larger than or equal to 481 pixels */
-    #somethingorother {
-      width: 480px ;
-    }
-  }
+}

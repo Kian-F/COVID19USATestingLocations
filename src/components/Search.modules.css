@@ -35,9 +35,23 @@
     height: 56px;
     width: 135px;
 }
-/* @media only screen and (max-width: 220px) {
-    .heroContent, .mainHeder  {
+/* }
+@media only screen and (max-width: 220px) {
+    .heroContent {
       margin: 2% 0 !important;
     }
   
 } */
+
+@media only screen and (max-width: 770px) {
+  .heroContent {
+    position: fixed;
+    top: 30rem;
+    left: 30%;
+  }
+  .mainHeder{
+    height: 385px;
+    top: -40px;
+    font-size: 30px;
+}
+}

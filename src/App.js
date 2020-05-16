@@ -66,6 +66,7 @@ const App = () => {
 
   return (
     <React.Fragment>
+      <div className={styles.container}>
       <div className="hero-image">
         <Search className={styles.heroContent} search={search} />
       </div>
@@ -126,6 +127,7 @@ const App = () => {
           ))}
         </div>
       </Grid>
+      </div>
     </React.Fragment>
   );
 };
