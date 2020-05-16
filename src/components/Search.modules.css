@@ -54,4 +54,8 @@
     top: -40px;
     font-size: 30px;
 }
+.MuiGrid-spacing-xs-3 > .MuiGrid-item  {
+  margin: 0;
+  display: contents;
+}
 }
