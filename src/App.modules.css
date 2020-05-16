@@ -68,4 +68,9 @@ position: relative;
   .container {
     margin: 0 10%;
   }
+  .box{
+    
+    width: 100%;
+    margin-left: 5px;
+  }
 }
