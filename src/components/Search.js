@@ -31,6 +31,8 @@ const Search = (props) => {
     <div>
       <div className="mainHeder">
         <h1>COVID-19 USA Testing Locations</h1>
+        <p>This is an API-powered website with a Postman Collection behind it</p>
+        <p>Not everyone needs to be tested for COVID-19. This site provides some information that might help in making decisions about seeking care or testing.</p>
         <p style={{color:'white'}}>Find By State</p>
       </div>
 
