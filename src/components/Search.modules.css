@@ -14,13 +14,14 @@
     position: absolute;
     /* size: 72px; */
     width: 100%;
-    font-size: 22px;
+    font-size: 21px;
     background-color: #6d6186;
     height: 231px;
     /* margin: 15px; */
-    margin-top: 60px;
+    margin-top: 50px;
     border-radius: 10px;
     opacity: 0.8;
+    top: -40px;
   }
   .MuiOutlinedInput-notchedOutline {
     border-color: rgba(219, 203, 203, 0.23);
@@ -49,11 +50,11 @@
     top: 30rem;
     left: 30%;
   }
-  .mainHeder{
+  /* .mainHeder{
     height: 385px;
     top: -40px;
     font-size: 21px;
-}
+} */
 .MuiGrid-spacing-xs-3 > .MuiGrid-item  {
   margin: 0;
   display: contents;
