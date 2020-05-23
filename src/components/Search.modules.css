@@ -1,7 +1,7 @@
 .heroContent{
     text-align: center;
     position: fixed;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -14,7 +14,7 @@
     position: absolute;
     /* size: 72px; */
     width: 100%;
-    font-size: 35px;
+    font-size: 23px;
     background-color: #6d6186;
     height: 231px;
     /* margin: 15px; */
@@ -52,7 +52,7 @@
   .mainHeder{
     height: 385px;
     top: -40px;
-    font-size: 30px;
+    font-size: 21px;
 }
 .MuiGrid-spacing-xs-3 > .MuiGrid-item  {
   margin: 0;
