@@ -35,13 +35,8 @@
     height: 56px;
     width: 135px;
 }
-/* }
-@media only screen and (max-width: 220px) {
-    .heroContent {
-      margin: 2% 0 !important;
-    }
-  
-} */
+
+
 
 @media only screen and (max-width: 770px) {
   .heroContent {
@@ -59,3 +54,22 @@
   display: contents;
 }
 }
+@media only screen and (max-width: 220px) {
+  .heroContent {
+    margin: 2% 0 !important;
+  }
+.searchButton {
+    position: fixed;
+    text-align: center;
+    top: 70px;
+    left: 58px;
+}
+  .mainHeder{
+    height: 385px;
+    top: -40px;
+    font-size: 16px;
+}
+.MuiFormControl-root {
+left: 44px;
+}
+} 

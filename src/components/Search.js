@@ -59,6 +59,7 @@ const Search = (props) => {
         <div className="searchButton">
         <Button
           onClick={callSearchFunction}
+          type="submit"
           variant="contained"
           color="primary"
         >
