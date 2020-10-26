@@ -1,4 +1,18 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+----
+# Weather App
+
+## Table of Contents
+- Introduction
+- Screenshots
+- Instructions
+- Motivation
+- Technologies
+- Further Development
+- Screenshots
+
+## Introduction
+This app was a side project during the COVID-19 pandemic lock down.
 
 ## Available Scripts
 
